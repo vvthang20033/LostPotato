@@ -1,0 +1,4 @@
+ID	buyNum	cd	priceType	price	purchaseAndroid	purchaseIOS	isOpen
+int	int	int	int	int	string	string	int
+编号							
+1	1	0	0	99	adfreevip	adfree	1

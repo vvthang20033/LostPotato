@@ -1,0 +1,11 @@
+ID	Name	EnemyType	Enable	AIType	WeaponType	Health	Speed	Attack	AttackCD	StunTime
+int	string	EnemyType	bool	AIType	WeaponType	int	float	int	float[]	float
+ID										
+1000	Neutral	1	1	1	0	1	2	1	-1,-1	-1
+1001	Basic	2	1	2	0	1	1	1	-1,-1	-1
+1002	Ranged	3	1	1	2	1	1	1	40,80	-1
+1003	EnPoop	4	1	1	3	1	2	1	100,140	-1
+1004	Laser	5	1	1	4	1	2	1	90,120	-1
+1005	Tank	6	1	2	0	1	2	1	-1,-1	0.75
+1006	Torch	7	1	1	5	1	2	1	40,80	1.5
+1007	Shopkeeper	8	1	0	0	1	0	1	-1,-1	-1

@@ -1,0 +1,8 @@
+ID	Name	WeaponType	Enable	Speed	Duration
+int	string	WeaponType	bool	float[]	float
+ID					
+2000	普攻	1	1	0,0	0.2
+2001	子弹	2	1	2,2	-1
+2002	黄色物质	3	1	0,0	-1
+2003	射线	4	1	0,0	1.25
+2004	火球	5	1	1,4	5

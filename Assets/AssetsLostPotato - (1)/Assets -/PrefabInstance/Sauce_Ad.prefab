@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1766337444344127
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4285695157592147}
+  - component: {fileID: 114518171117362406}
+  - component: {fileID: 114329783457292894}
+  - component: {fileID: 114230564968290885}
+  - component: {fileID: 114050341643843688}
+  - component: {fileID: 114672545226671481}
+  m_Layer: 0
+  m_Name: Sauce_Ad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4285695157592147
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766337444344127}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114518171117362406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766337444344127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91af524e1ca9d22b6e5071de62c22250, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  EnableTenjin: 1
+  TenjinApiKey: DNHMNRFWZYNEUF2ECKFITEKHFEW6O4ZP
+  EnableFacebook: 1
+  FacebookAppId_AN: 887220219361406
+  FacebookAppId_IOS: 864141345376601
+  EnableGameAnalysis: 1
+  GameAnalysisAndroidGameKey: e5a9c68d78859281f19acb3203e79481
+  GameAnalysisAndroidSecretKey: d918cebf6a18dd750495af6fb94c35ef9c9234ad
+  GameAnalysisIosGameKey: abc69315ecfbb0fe427be81926210c02
+  GameAnalysisIosSecretKey: 5274867b6fae372635d0ef982c0d147a27f9424f
+  EnableDobestAnalysis: 1
+  AndroidAppId: 501_62
+  AndroidChannelId: Google_Ad
+  IosAppId: 501_62
+  IosChannelId: Apple_Ad
+  EnableDobestAnalysisDebug: 0
+  EnableApplovinMAX: 1
+  MaxSdkKey: aSP1k4UQ2OG7SQJcL4TQ2VvsORUG9-dFkWctdwO3kz-DHoGXc52cWLTzii3Pv-CViRk8zByZITbbPzu0kk2qL0
+  MaxAndroidBADId:
+  MaxAndroidIADId:
+  MaxAndroidRADId: 545382c256d3555e
+  MaxIosBADId:
+  MaxIosIADId:
+  MaxIosRADId: 6837fb3bf436c130
+  MaxAdmobAndoridAppId: ca-app-pub-6478904050507008~6733801793
+  MaxAdmobIosAppId: ca-app-pub-6478904050507008~7033076898
+  EnableATSdk: 0
+  IOS_AT_AppId:
+  IOS_AT_AppKey:
+  IOS_AT_RewardAdID:
+  Android_AT_AppId:
+  Android_AT_AppKey:
+  Android_AT_RewardAdID:
+--- !u!114 &114329783457292894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766337444344127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac7a8139e93f4132730e3c2fd049b67, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114230564968290885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766337444344127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afec43affdc8908dc3f5450ee4d31a83, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114050341643843688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766337444344127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d18a73888d7ded985d8183ac2de29a79, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  channel: 2
+  SaveCloudDataCD: 1000
+--- !u!114 &114672545226671481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766337444344127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f43b0b8c261d6a671b594628d03cc21, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  channel: 3
+  SaveCloudDataCD: 1000

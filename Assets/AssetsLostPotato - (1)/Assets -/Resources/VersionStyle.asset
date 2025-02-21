@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0f1e3452505d12389f0cf8d9860e1a8, type: 3}
+  m_Name: VersionStyle
+  m_EditorClassIdentifier:
+  verData:
+    Major: 1
+    Minor: 0
+    build: 106
+  data:
+    channel: 2
+    productName: Lost Potato
+    bundleIdentifier: com.lost.potato.mobile.paid.gp
+    SauceSDKGo: {fileID: 1766337444344127, guid: 20b9cab3969bfee408604c500c0031ce, type: 2}
+    flag: 18725
+    AppleId:
+    icon: {fileID: 0}
+  flags: 4
+  JobName: http://172.172.172.59:8080/job/LP_free
+  Reprot: 0
+  language: -1

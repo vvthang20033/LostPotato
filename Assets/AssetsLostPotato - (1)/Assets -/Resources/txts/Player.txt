@@ -1,0 +1,4 @@
+ID	WeaponType	Health	Speed	Attack	AttackCD	AttackRange	Strength
+int	WeaponType	int	float	int	float	float	float
+ID							
+0	1	2	3	1	0.3	8	8

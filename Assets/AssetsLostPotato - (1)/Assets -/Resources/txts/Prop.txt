@@ -1,0 +1,6 @@
+ID	Name	Tag	Enable	Buff	Desc	Icon
+int	string	string	bool	int[]	string	string
+ID						
+6000	无敌	PROP_INVINCIBLE	1	5021	DESC_BUFF_INVINCIBLE	prop_invincible
+6001	先手	PROP_ADDITIONAL_TRAP	1	5022	DESC_BUFF_ADDITIONAL_TRAP	prop_additional_trap
+6002	圣物	PROP_RELIC	1	50001,5023	DESC_BUFF_INCREASE_HP_MAX	prop_relic

@@ -1,0 +1,10 @@
+Buff
+Enemy
+Hat
+Language
+LevelEnemy
+Player
+Prop
+Shop
+Trap
+Weapon
