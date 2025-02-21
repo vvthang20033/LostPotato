@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82da5ceb4c8d2874d877f095b149b6a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 6
   range: 4.2
   spriteRenderer: {fileID: 212829332587341735}
   hitSprite: {fileID: 21300000, guid: c46edc5ed877fbc45b1082d6fe55dcbd, type: 2}

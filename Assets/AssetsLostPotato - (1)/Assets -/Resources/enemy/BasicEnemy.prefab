@@ -329,6 +329,7 @@ GameObject:
   - component: {fileID: 136615035936825283}
   - component: {fileID: 2423371721345706678}
   - component: {fileID: 7795760225916858902}
+  - component: {fileID: 8930967284478526182}
   m_Layer: 7
   m_Name: BasicEnemy
   m_TagString: Enemy
@@ -411,3 +412,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitEffect: {fileID: 1153455079933053, guid: e43bc8474935afa44bff10b7ce8aea17, type: 3}
+--- !u!114 &8930967284478526182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862302938023961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d56d6df590b5034cb3d1eff4d375601, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

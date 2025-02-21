@@ -5,14 +5,19 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     private bool isGhosted = false; // Trạng thái hiện tại của enemy
-    private Rigidbody rb;
     private Animator animator;
-    private float ghostTime = 2.5f;
+    private float ghostTime = 2f;
+    private SpriteRenderer spriteRenderer;
+    private Collider collider;
+    public static bool hasKilledEnemy = false;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        collider = GetComponent<Collider>();
+        Stop();
     }
 
     void Update()
@@ -21,18 +26,21 @@ public class EnemyHealth : MonoBehaviour
         {
             Stop();
         }
-        else if (!HealthPlayer.playerHit && isGhosted)
-        {
-            Continue();
-        }
+      
     }
 
-    private void Stop()
+    protected void Stop()
     {
         isGhosted = true; // Đánh dấu enemy đã dừng
+        if (spriteRenderer != null)
+        {
+            Color newColor = spriteRenderer.color;
+            newColor.a = 0.3f;
+            spriteRenderer.color = newColor;
+        }
 
         // Tắt tất cả script trừ script này
-        MonoBehaviour[] scripts = GetComponentsInChildren<MonoBehaviour>();
+        MonoBehaviour[] scripts = GetComponents<MonoBehaviour>();
         foreach (MonoBehaviour script in scripts)
         {
             if (script != this)
@@ -46,37 +54,55 @@ public class EnemyHealth : MonoBehaviour
         {
             animator.enabled = false;
         }
+        if (collider != null)
+        {
+            collider.enabled = false;
+        }
+
+        StartCoroutine(Continue());
     }
 
-    private void Continue()
-    {
-        if(Time.time > ghostTime)
-        {   
-            ghostTime = Time.time + 2.5f;
-            isGhosted = false; // Đánh dấu enemy tiếp tục hoạt động
+    protected IEnumerator Continue()
+    {   
+        yield return new WaitForSeconds(ghostTime);
+        if (spriteRenderer != null)
+        {
+            Color newColor = spriteRenderer.color;
+            newColor.a = 1f;
+            spriteRenderer.color = newColor;
+        }
+        isGhosted = false; // Đánh dấu enemy tiếp tục hoạt động
 
-            // Bật lại tất cả script
-            MonoBehaviour[] scripts = GetComponentsInChildren<MonoBehaviour>();
-            foreach (MonoBehaviour script in scripts)
+        // Bật lại tất cả script
+        MonoBehaviour[] scripts = GetComponentsInChildren<MonoBehaviour>();
+        foreach (MonoBehaviour script in scripts)
+        {
+            if (script != this)
             {
-                if (script != this)
-                {
-                    script.enabled = true;
-                }
+                script.enabled = true;
             }
+        }
 
-            // Bật lại animation
-            if (animator != null)
-            {
-                animator.enabled = true;
-            }
+        // Bật lại animation
+        if (animator != null)
+        {
+            animator.enabled = true;
+        }
+        if (collider != null)
+        {
+            collider.enabled = true;
         }
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("PlayerAttack2"))
-        {   
+        {
+            other.gameObject.tag = "Player";
             Destroy(gameObject);
+            hasKilledEnemy = true;
+
         }
     }
 }
+
+

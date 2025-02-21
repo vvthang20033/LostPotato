@@ -235,6 +235,7 @@ GameObject:
   - component: {fileID: 136784273746394635}
   - component: {fileID: 113787428758399094}
   - component: {fileID: 8952731844367202193}
+  - component: {fileID: -181317235650375830}
   m_Layer: 7
   m_Name: TorchEnemy
   m_TagString: Enemy
@@ -318,6 +319,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitEffect: {fileID: 1153455079933053, guid: e43bc8474935afa44bff10b7ce8aea17, type: 3}
+--- !u!114 &-181317235650375830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268270112051873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d56d6df590b5034cb3d1eff4d375601, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1348002371088918
 GameObject:
   m_ObjectHideFlags: 0

@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 5659274534199927242}
   - component: {fileID: 35888908423512824}
   - component: {fileID: 7378643375381827291}
+  - component: {fileID: -5143293247093368060}
   m_Layer: 7
   m_Name: PoopEnemy
   m_TagString: Enemy
@@ -193,6 +194,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitEffect: {fileID: 1153455079933053, guid: e43bc8474935afa44bff10b7ce8aea17, type: 3}
+--- !u!114 &-5143293247093368060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7377466970707148223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d56d6df590b5034cb3d1eff4d375601, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7377779920918218460
 GameObject:
   m_ObjectHideFlags: 0

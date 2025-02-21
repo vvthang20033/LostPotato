@@ -2,20 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemySpawn : MonoBehaviour
+public class EnemySpawn : EnemyHealth
 {
 
 
-    public GameObject[] enemies; // Mảng chứa Prefab quái vật
-    public int[] minLevelToSpawn; // Mảng lưu level tối thiểu để quái xuất hiện
+    public GameObject[] enemies; 
+    public int[] minLevelToSpawn; 
 
-    public Transform[] spawnPoints; // Các điểm spawn quái
-    public int currentWave = 1; // Level hiện tại
-    public int enemiesPerWave = 3; // Số lượng quái mỗi ván
+    public Transform[] spawnPoints; 
+    public int currentWave = 1; 
+    public int enemiesPerWave = 3; 
 
     void Start()
     {
         StartWave();
+       
     }
 
     void StartWave()

@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class WeaponLaser : Weapon
 {
-    private Animator animator;
+    private Animator animatorWeaponLaser;
     private void Start()
     {
-        animator = GetComponent<Animator>();
+        animatorWeaponLaser = GetComponent<Animator>();
     }
     public override void SpawnWeapon()
     {
@@ -15,12 +15,14 @@ public class WeaponLaser : Weapon
         {
             nextTimeFire = Time.time + fireRate;
             Instantiate(weapon, attackpoint.position, attackpoint.rotation, attackpoint);
-            if (animator != null)
+            if (animatorWeaponLaser != null)
             {
 
-                animator.Play("Attack");
+                animatorWeaponLaser.Play("Attack");
 
             }
         }
     }
+  
 }
+    
