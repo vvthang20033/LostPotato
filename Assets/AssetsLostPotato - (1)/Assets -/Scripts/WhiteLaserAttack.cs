@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,8 +11,17 @@ public class WhiteLaserAttack : MonoBehaviour
         colliderLaser = gameObject.GetComponent<Collider>();
         colliderLaser.enabled = false;
     }
-    
-    private void Finish()
+
+    public void Finish()
+    {
+        // Đổi tag để có thể tương tác với enemy
+        gameObject.tag = "PlayerAttack2";
+
+        // Hủy đối tượng sau một khoảng thời gian ngắn
+        Invoke("DestroyObject", 0.1f); // 0.1 giây là đủ để tag mới được nhận diện
+    }
+
+    private void DestroyObject()
     {
         Destroy(gameObject);
     }

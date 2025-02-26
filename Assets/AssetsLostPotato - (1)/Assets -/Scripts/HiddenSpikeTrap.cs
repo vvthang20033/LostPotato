@@ -11,7 +11,7 @@ public class HiddenSpikeTrap : MonoBehaviour
     private void Start()
     {
        
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
     }
     private void OnTriggerEnter(Collider other)
     {
