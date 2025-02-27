@@ -78,7 +78,7 @@ public class BouncingBallMove : MonoBehaviour
     }
     private void ResetBall()
     {
-        gameObject.tag = "Player";
+        gameObject.tag = "TrapAttack";
         speed = 5;
         if (spriteRendererBouncing.sprite == ballWhite)
         {

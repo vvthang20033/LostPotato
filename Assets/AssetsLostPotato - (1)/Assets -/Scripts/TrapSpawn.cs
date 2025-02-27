@@ -7,51 +7,53 @@ public class TrapSpawn : MonoBehaviour
 
     void Start()
     {
-        SpawnTrap(); // Spawn một trap khi game bắt đầu
+        SpawnTraps(); // Spawn trap khi game bắt đầu
     }
 
-    // Spawn bẫy ngẫu nhiên
-    void SpawnTrap()
+    // Spawn trap ngẫu nhiên
+    public void SpawnTraps()
     {
+        // Kiểm tra nếu không có bẫy nào được gán
         if (trapPrefabs.Length == 0)
         {
             Debug.LogWarning("Không có bẫy nào được gán!");
             return;
         }
 
+        // Chọn ngẫu nhiên một Prefab bẫy
         int randomTrapIndex = Random.Range(0, trapPrefabs.Length);
-        SpawnSpecificTrap(randomTrapIndex);
-    }
+        GameObject trapPrefab = trapPrefabs[randomTrapIndex];
 
-    // Spawn bẫy chỉ định
-    public void SpawnSpecificTrap(int trapIndex = 0)
-    {
-        if (trapIndex < 0 || trapIndex >= trapPrefabs.Length)
-        {
-            Debug.LogWarning("Chỉ số bẫy không hợp lệ!");
-            return;
-        }
-
-        GameObject trapPrefab = trapPrefabs[trapIndex];
+        // Tạo vị trí spawn ngẫu nhiên trong phạm vi
         Vector3 spawnPosition = GetRandomSpawnPosition();
+
+        // Kiểm tra xem trap có được phép xoay không
         bool canRotate = trapPrefab.GetComponent<TrapData>()?.canRotate ?? true;
+
+        // Tạo hướng quay ngẫu nhiên (nếu được phép)
         Quaternion spawnRotation = canRotate ? GetRandomRotation() : Quaternion.identity;
 
+        // Spawn bẫy tại vị trí và hướng đã chọn
         Instantiate(trapPrefab, spawnPosition, spawnRotation);
+
         Debug.Log($"Đã spawn bẫy {trapPrefab.name} tại vị trí {spawnPosition} với hướng {spawnRotation.eulerAngles}");
     }
 
     Vector3 GetRandomSpawnPosition()
     {
+        // Tạo vị trí ngẫu nhiên trong phạm vi
         float randomX = Random.Range(-spawnRange, spawnRange);
         float randomZ = Random.Range(-spawnRange, spawnRange);
-        return new Vector3(randomX, 0, randomZ);
+        return new Vector3(randomX, 0, randomZ); // Giả sử y = 0 (mặt đất)
     }
 
     Quaternion GetRandomRotation()
     {
-        int randomDirection = Random.Range(0, 4);
-        float angle = randomDirection * 90f;
+        // Chọn ngẫu nhiên một trong 4 hướng (0°, 90°, 180°, 270°)
+        int randomDirection = Random.Range(0, 4); // 0: trên, 1: phải, 2: dưới, 3: trái
+        float angle = randomDirection * 90f; // Tính góc quay
+
+        // Trả về rotation tương ứng
         return Quaternion.Euler(0, angle, 0);
     }
 }
