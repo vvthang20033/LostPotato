@@ -26,8 +26,11 @@ public class TrapSpawn : MonoBehaviour
         // Tạo vị trí spawn ngẫu nhiên trong phạm vi
         Vector3 spawnPosition = GetRandomSpawnPosition();
 
-        // Tạo hướng quay ngẫu nhiên (0°, 90°, 180°, 270°)
-        Quaternion spawnRotation = GetRandomRotation();
+        // Kiểm tra xem trap có được phép xoay không
+        bool canRotate = trapPrefab.GetComponent<TrapData>()?.canRotate ?? true;
+
+        // Tạo hướng quay ngẫu nhiên (nếu được phép)
+        Quaternion spawnRotation = canRotate ? GetRandomRotation() : Quaternion.identity;
 
         // Spawn bẫy tại vị trí và hướng đã chọn
         Instantiate(trapPrefab, spawnPosition, spawnRotation);

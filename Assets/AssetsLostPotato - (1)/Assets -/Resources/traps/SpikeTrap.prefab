@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 4844269783063127}
   - component: {fileID: 54449855710253525}
   - component: {fileID: 65376600059650586}
+  - component: {fileID: 82091085387085420}
   m_Layer: 10
   m_Name: SpikeTrap
   m_TagString: PlayerAttack2
@@ -147,3 +148,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8, y: 0.8, z: 0.8}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &82091085387085420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757414424909878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694489d0f90be404ebbc32d29bb41d24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRotate: 0

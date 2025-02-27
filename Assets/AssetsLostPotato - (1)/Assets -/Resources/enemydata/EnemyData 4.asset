@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90051feec8bb7b143abe9062f1f3ab69, type: 3}
   m_Name: EnemyData 4
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
-  minLevelToSpawn: 0
+  prefab: {fileID: 7377466970707148223, guid: 2886231d254e59a4d9fcc52cf8c854dd, type: 3}
+  minLevelToSpawn: 10

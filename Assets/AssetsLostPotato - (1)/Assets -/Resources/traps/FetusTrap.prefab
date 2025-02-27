@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 54391529777854592}
   - component: {fileID: 65435884657805446}
   - component: {fileID: 8095106343704108480}
+  - component: {fileID: 4285342619932455136}
   m_Layer: 10
   m_Name: FetusTrap
   m_TagString: PlayerAttack2
@@ -182,3 +183,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57d01b803c30c0a438f74d7612ced440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4285342619932455136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854705840331981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694489d0f90be404ebbc32d29bb41d24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRotate: 0

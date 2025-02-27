@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4154254229513123}
   - component: {fileID: 95971722786653644}
   - component: {fileID: 3604038892571214758}
+  - component: {fileID: 2231523531176108077}
   m_Layer: 10
   m_Name: PlantTrap
   m_TagString: Untagged
@@ -71,6 +72,19 @@ MonoBehaviour:
   weapon: {fileID: 1559870124627125, guid: 6e64c45d235f41344b03496197701efc, type: 3}
   attackpoint: {fileID: 4465823913466538}
   fireRate: 2
+--- !u!114 &2231523531176108077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138443203464839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694489d0f90be404ebbc32d29bb41d24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRotate: 1
 --- !u!1 &1495316355116334
 GameObject:
   m_ObjectHideFlags: 0

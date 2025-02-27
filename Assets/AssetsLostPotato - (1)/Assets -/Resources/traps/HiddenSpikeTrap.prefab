@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 54690978645548057}
   - component: {fileID: 65725193961235784}
   - component: {fileID: 2599050240681046157}
+  - component: {fileID: -6556920175065056527}
   m_Layer: 10
   m_Name: HiddenSpikeTrap
   m_TagString: Untagged
@@ -182,3 +183,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 542f6e862679f6849bdc13aa7fe4afe7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-6556920175065056527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686607461978374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694489d0f90be404ebbc32d29bb41d24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRotate: 0

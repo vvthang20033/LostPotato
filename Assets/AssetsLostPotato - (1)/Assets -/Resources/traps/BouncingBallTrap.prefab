@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 54413481129916927}
   - component: {fileID: 136525046122542860}
   - component: {fileID: 503704294877879147}
+  - component: {fileID: 4212818804429577759}
   m_Layer: 6
   m_Name: BouncingBallTrap
   m_TagString: TrapAttack
@@ -104,7 +105,19 @@ MonoBehaviour:
   ballGreen: {fileID: 21300000, guid: f09fd40ce56b5ad45aac4880ad31fcb4, type: 3}
   ballWhiteBlood: {fileID: 21300000, guid: 28f85e7ca2180f94eacb7b7ec4916201, type: 2}
   ballGreenBlood: {fileID: 21300000, guid: bc7ef83046073944bbfe005f0a3d2050, type: 2}
-  speed: 5
+--- !u!114 &4212818804429577759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212305869752245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694489d0f90be404ebbc32d29bb41d24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRotate: 0
 --- !u!1 &1447366612591133
 GameObject:
   m_ObjectHideFlags: 0
