@@ -11,6 +11,7 @@ public class EnemyHealth : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Collider collider;
     public static bool hasKilledEnemy = false;
+    public int cost ; // Điểm của quái vật
 
     void Start()
     {
@@ -101,7 +102,7 @@ public class EnemyHealth : MonoBehaviour
         // Kiểm tra nếu va chạm với đối tượng có tag "PlayerAttack2"
         if (other.CompareTag("PlayerAttack2"))
         {
-            other.gameObject.tag = "Player"; // Đổi tag của đối tượng va chạm
+           
 
             // Phát animation "Die" và đánh dấu enemy đã bị tiêu diệt
             if (animator != null)
@@ -112,6 +113,15 @@ public class EnemyHealth : MonoBehaviour
 
             isDead = true; // Đánh dấu enemy đã chết
             Stop(); // Gọi hàm Stop() để tạm dừng enemy
+
+            // Hủy đối tượng sau một khoảng thời gian
+            Destroy(gameObject, 2f);
         }
+    }
+
+    // Trả về điểm của quái vật
+    public int GetCost()
+    {
+        return cost;
     }
 }

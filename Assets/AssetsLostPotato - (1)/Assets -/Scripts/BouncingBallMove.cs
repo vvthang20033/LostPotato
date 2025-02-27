@@ -69,9 +69,9 @@ public class BouncingBallMove : MonoBehaviour
         }
         if (other.CompareTag("Enemy"))
         {
-            if (EnemyHealth.hasKilledEnemy == true)
+            if (EnemyHealth.hasKilledEnemy == true && spriteRendererBouncing.sprite == ballWhite)
             {
-                spriteRendererBouncing.sprite = ballWhiteBlood;
+                spriteRendererBouncing.sprite = ballGreenBlood;
             }
         }
 

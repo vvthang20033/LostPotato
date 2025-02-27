@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 82091085387085420}
   m_Layer: 10
   m_Name: SpikeTrap
-  m_TagString: PlayerAttack2
+  m_TagString: TrapAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
