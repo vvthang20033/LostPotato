@@ -59,7 +59,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3577080970564194488}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.3686416, y: 0, z: 1.6562065}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -119,8 +119,8 @@ MonoBehaviour:
   playerAnimator: {fileID: 3526843941076627535}
   playerSpriteRenderer: {fileID: 3697787722868286742}
   vectoroffset: {x: 0, y: 0, z: 0}
-  minBounds: {x: -4.2, y: -4.4}
-  maxBounds: {x: 3.5, y: 3.9}
+  minBounds: {x: -4.2, y: -3.8}
+  maxBounds: {x: 3.2, y: 4.2}
 --- !u!114 &1047812423976883264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01112f57ac0885b448525c7666fe9a44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
+  health: 2
   rotateTime: 0.5
 --- !u!1 &3577092653734954460
 GameObject:
