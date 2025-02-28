@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25c30e50b12085748baa20d5fb0074ac, type: 3}
   m_Name: BuffSpeed
   m_EditorClassIdentifier: 
-  buffName: 
-  buffIcon: {fileID: 0}
+  buffName: buffSpeed
+  buffIcon: {fileID: 21300000, guid: 7e443a22c4088774ea0201ca0fca6ba9, type: 3}
   trapPrefab: {fileID: 0}

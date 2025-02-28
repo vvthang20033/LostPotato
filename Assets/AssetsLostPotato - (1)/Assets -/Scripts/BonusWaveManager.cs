@@ -16,6 +16,8 @@ public class BonusWaveManager : MonoBehaviour
     public Button button2;
     public HealthPlayer healthPlayer;
     public PlayerMovement playerMovement;
+    public HitAttack attack;
+    public GameObject attackRange;
 
     [Header("Buff Data")]
     public List<DataBuff> buffDataList; // Danh sách Buff sử dụng ScriptableObject
@@ -125,6 +127,14 @@ public class BonusWaveManager : MonoBehaviour
         if( buffData.buffName == "buffSpeed")
         {
             playerMovement.speed = 5;
+        }
+        if(buffData.buffName == "buffStrength")
+        {
+            attack.force = 4;
+        }
+        if(buffData.buffName == "buffAttackRange")
+        {
+            attackRange.transform.localScale = new Vector3 (1.25f,1,1);
         }
         
     }

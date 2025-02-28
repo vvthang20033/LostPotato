@@ -99,9 +99,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 95625710091043680}
-  force: 2
+  force: 4
   range: 4
-  bulletPlayer: {fileID: 0}
 --- !u!1 &1365986810612340
 GameObject:
   m_ObjectHideFlags: 0
