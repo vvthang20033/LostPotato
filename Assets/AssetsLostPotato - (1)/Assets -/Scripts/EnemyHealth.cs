@@ -60,11 +60,7 @@ public class EnemyHealth : MonoBehaviour
             }
         }
 
-        // Tắt collider
-        if (collider != null)
-        {
-            collider.enabled = false;
-        }
+        gameObject.tag = "Ghost";
 
         // Chỉ tiếp tục hoạt động nếu enemy chưa chết
         if (!isDead)
@@ -106,11 +102,7 @@ public class EnemyHealth : MonoBehaviour
             }
         }
 
-        // Bật lại collider
-        if (collider != null)
-        {
-            collider.enabled = true;
-        }
+        gameObject.tag = "Enemy";
     }
 
     private void OnTriggerEnter(Collider other)
