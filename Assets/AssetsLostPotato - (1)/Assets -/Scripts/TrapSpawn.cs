@@ -3,11 +3,41 @@
 public class TrapSpawn : MonoBehaviour
 {
     public GameObject[] trapPrefabs; // Mảng chứa Prefab của các bẫy
-    public float spawnRange = 4f; // Phạm vi spawn bẫy (từ tâm)
+    public float spawnRange = 3.5f; // Phạm vi spawn bẫy (từ tâm)
 
     void Start()
     {
         SpawnTraps(); // Spawn trap khi game bắt đầu
+    }
+    private void Update()
+    {   
+        
+        if (EnemySpawn.nextLevel)
+        {
+            GameObject[] trap = GameObject.FindGameObjectsWithTag("TrapAttack");
+            GameObject[] trap2 = GameObject.FindGameObjectsWithTag("PlayerAttack2");
+           
+            foreach (GameObject trapObj in trap)
+            {
+                RandomTransform(trapObj);
+            }
+            foreach (GameObject trapObj in trap2)
+            {
+                RandomTransform(trapObj);
+            }
+            EnemySpawn.nextLevel = false;
+        }
+    }
+    public void RandomTransform(GameObject trap) // Đảm bảo đây là một phương thức
+    {
+        if (trap == null) return;
+
+        Vector3 spawnPosition = GetRandomSpawnPosition();
+        bool canRotate = trap.GetComponent<TrapData>()?.canRotate ?? true;
+        Quaternion spawnRotation = canRotate ? GetRandomRotation() : Quaternion.identity;
+
+        trap.transform.position = spawnPosition;
+        trap.transform.rotation = spawnRotation;
     }
 
     // Spawn trap ngẫu nhiên
@@ -39,7 +69,7 @@ public class TrapSpawn : MonoBehaviour
         Debug.Log($"Đã spawn bẫy {trapPrefab.name} tại vị trí {spawnPosition} với hướng {spawnRotation.eulerAngles}");
     }
 
-    Vector3 GetRandomSpawnPosition()
+    public Vector3 GetRandomSpawnPosition()
     {
         // Tạo vị trí ngẫu nhiên trong phạm vi
         float randomX = Random.Range(-spawnRange, spawnRange);

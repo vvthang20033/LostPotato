@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 95971722786653644}
   - component: {fileID: 3604038892571214758}
   - component: {fileID: 2231523531176108077}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: PlantTrap
   m_TagString: TrapAttack
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4465823913466538}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +126,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4346893477192452}
   - component: {fileID: 212803206361688663}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: TrapModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ public class BouncingBallMove : MonoBehaviour
     public Sprite ballWhiteBlood;
     public Sprite ballGreenBlood;
     private Rigidbody rb;
-    private float range = 4.4f;
+    private float range = 4.2f;
     private Vector3 direction;
     private float speed = 5;
 

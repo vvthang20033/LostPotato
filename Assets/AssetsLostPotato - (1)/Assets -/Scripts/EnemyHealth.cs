@@ -44,7 +44,15 @@ public class EnemyHealth : MonoBehaviour
 
         // Tắt tất cả script trừ script này
         MonoBehaviour[] scripts = GetComponents<MonoBehaviour>();
+        MonoBehaviour[] scriptsChildren = GetComponentsInChildren<MonoBehaviour>();
         foreach (MonoBehaviour script in scripts)
+        {
+            if (script != this)
+            {
+                script.enabled = false;
+            }
+        }
+        foreach (MonoBehaviour script in scriptsChildren)
         {
             if (script != this)
             {
@@ -82,7 +90,15 @@ public class EnemyHealth : MonoBehaviour
 
         // Bật lại tất cả script
         MonoBehaviour[] scripts = GetComponents<MonoBehaviour>();
+        MonoBehaviour[] scriptsChildren = GetComponentsInChildren<MonoBehaviour>();
         foreach (MonoBehaviour script in scripts)
+        {
+            if (script != this)
+            {
+                script.enabled = true;
+            }
+        }
+        foreach (MonoBehaviour script in scriptsChildren)
         {
             if (script != this)
             {

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 95031205930311635}
   - component: {fileID: 7821996787167760022}
   - component: {fileID: 7759865353305293734}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: CannonTrap
   m_TagString: TrapAttack
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4502000458129007}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +126,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4509654088867775}
   - component: {fileID: 212495354336254712}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: TrapModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}

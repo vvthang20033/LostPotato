@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4419387711899666}
   - component: {fileID: 212858207582341110}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: TrapModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 54449855710253525}
   - component: {fileID: 65376600059650586}
   - component: {fileID: 82091085387085420}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: SpikeTrap
   m_TagString: PlayerAttack2
   m_Icon: {fileID: 0}

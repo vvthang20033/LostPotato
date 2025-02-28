@@ -42,7 +42,6 @@ public class BonusWaveManager : MonoBehaviour
 
     public void StartBonusWave()
     {
-        Debug.Log("Màn thưởng đã bắt đầu!");
         HideAllTraps();
         SpawnSpecialTrap();
         ShowRandomBuffOptions();

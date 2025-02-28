@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4440881974143142}
   - component: {fileID: 212146857804388436}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: TrapModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 65435884657805446}
   - component: {fileID: 8095106343704108480}
   - component: {fileID: 4285342619932455136}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: FetusTrap
   m_TagString: PlayerAttack2
   m_Icon: {fileID: 0}

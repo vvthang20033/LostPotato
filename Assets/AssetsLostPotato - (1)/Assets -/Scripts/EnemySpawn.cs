@@ -13,6 +13,7 @@ public class EnemySpawn : MonoBehaviour
     private List<GameObject> spawnedEnemies = new List<GameObject>();
     public static int level = 1;
     public static System.Action OnLevelChanged;
+    public static bool nextLevel = false;
 
     private void Awake()
     {
@@ -129,7 +130,7 @@ public class EnemySpawn : MonoBehaviour
         currentWave++;
         waveDifficultyPoints = currentWave;
         OnLevelChanged?.Invoke();
-
+        nextLevel = true;
         // Kiểm tra xem có phải là màn thưởng không
         if (IsBonusWave())
         {
@@ -145,7 +146,7 @@ public class EnemySpawn : MonoBehaviour
     {
         foreach (var enemyData in enemyList.enemies)
         {
-            if (currentWave == enemyData.minLevelToSpawn - 1)
+            if ((currentWave -1)  % 3 == 0)
             {
                 return true;
             }

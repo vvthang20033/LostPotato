@@ -28,6 +28,6 @@ public class HiddenSpikeTrap : MonoBehaviour
         yield return new WaitForSeconds(timeOff);
         animator.SetTrigger("Off");
         animator.SetTrigger("Hide");
-        gameObject.tag = "Player";
+        gameObject.tag = "TrapAttack";
     }
 }
