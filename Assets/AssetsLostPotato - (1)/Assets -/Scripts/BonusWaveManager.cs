@@ -14,6 +14,8 @@ public class BonusWaveManager : MonoBehaviour
     public GameObject buff2;
     public Button button1;
     public Button button2;
+    public HealthPlayer healthPlayer;
+    public PlayerMovement playerMovement;
 
     [Header("Buff Data")]
     public List<DataBuff> buffDataList; // Danh sách Buff sử dụng ScriptableObject
@@ -116,6 +118,15 @@ public class BonusWaveManager : MonoBehaviour
             Instantiate(buffData.trapPrefab, specialTrapPosition, Quaternion.identity);
             Debug.Log($"Đã kích hoạt trap buff: {buffData.trapPrefab.name}");
         }
+        if(buffData.buffName == "buffHealth")
+        {
+            healthPlayer.health += 1;
+        }
+        if( buffData.buffName == "buffSpeed")
+        {
+            playerMovement.speed = 5;
+        }
+        
     }
 
     void EndBonusWave()

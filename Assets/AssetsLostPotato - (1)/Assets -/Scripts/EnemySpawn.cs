@@ -7,7 +7,7 @@ public class EnemySpawn : MonoBehaviour
     public static EnemySpawn Instance;
 
     public EnemyList enemyList;
-    public int currentWave = 1;
+    public int currentWave = 0;
     public int waveDifficultyPoints;
     public float spawnRange = 3.8f;
     private List<GameObject> spawnedEnemies = new List<GameObject>();

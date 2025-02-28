@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class HealthPlayer : MonoBehaviour
 {
-    public int health;
+    public  int health = 2;
     private float speed = 8;   
     public float rotateTime;
     private float nextTimeLive = 0;
@@ -30,6 +30,7 @@ public class HealthPlayer : MonoBehaviour
                 animator.Play("Idle");
             }
         }
+        
     }
 
     private void OnTriggerEnter(Collider other)

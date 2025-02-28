@@ -1,18 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; // Sử dụng nếu bạn dùng UI Canvas
+using UnityEngine.UI; 
 
 public class HealthDisplay : MonoBehaviour
 {
-    public HealthPlayer healthPlayer; // Tham chiếu đến script HealthPlayer
-    public Image[] hearts; // Mảng chứa các hình ảnh trái tim (UI Canvas)
-    // Hoặc sử dụng SpriteRenderer nếu bạn dùng Sprite trong game world:
-    // public SpriteRenderer[] hearts;
+    public HealthPlayer healthPlayer; 
+    public Image[] hearts; 
+  
 
     void Start()
     {
-        // Khởi tạo mảng hearts nếu chưa được gán trong Inspector
+     
         if (hearts == null || hearts.Length == 0)
         {
             hearts = new Image[transform.childCount];
