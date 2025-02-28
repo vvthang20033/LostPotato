@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c30e50b12085748baa20d5fb0074ac, type: 3}
+  m_Name: Fetus
+  m_EditorClassIdentifier: 
+  buffName: fetus
+  buffIcon: {fileID: 21300000, guid: 9c104f1caa930af49b3542ca8bf1ab1c, type: 2}
+  trapPrefab: {fileID: 1854705840331981, guid: a35c9a44d23d5ee4f8bfe0c7a1e2178d, type: 3}

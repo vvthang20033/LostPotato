@@ -724,7 +724,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3581055829385900896, guid: c6f5ac964ed190244988dcd3f6f1d152, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3581055829385900896, guid: c6f5ac964ed190244988dcd3f6f1d152, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2151,7 +2151,13 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f0bee20f3f18f6f4f8d0d2227bf017bb, type: 3}
   button1: {fileID: 1647339699}
   button2: {fileID: 1538250991}
-  specialTrapPrefab: {fileID: 1234110045677728, guid: d57feeeb836344e43a8327623ad900c4, type: 3}
+  trapPrefabs:
+  - {fileID: 1212305869752245, guid: 1a35c1a54d03804459b41a38d2b7b0e5, type: 3}
+  - {fileID: 1002965433718186, guid: d726e68f689ec524f8e5f1188330c8ec, type: 3}
+  - {fileID: 1854705840331981, guid: a35c9a44d23d5ee4f8bfe0c7a1e2178d, type: 3}
+  - {fileID: 1686607461978374, guid: dff4ce71d0f193140a75d4492c298fe2, type: 3}
+  - {fileID: 1138443203464839, guid: 34e527ac5bb996d4c9cfef7b1056df59, type: 3}
+  - {fileID: 1757414424909878, guid: a28ab57b7bf52fe40b7ccb6826e4ed9c, type: 3}
   specialTrapPosition: {x: -0.25, y: 0, z: -0.21}
 --- !u!1 &1549507466
 GameObject:
@@ -2185,7 +2191,7 @@ Transform:
   - {fileID: 1400096233}
   - {fileID: 1542088517}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1559865152
 GameObject:

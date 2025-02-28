@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c30e50b12085748baa20d5fb0074ac, type: 3}
+  m_Name: Bouncing
+  m_EditorClassIdentifier: 
+  buffName: bouncing
+  buffIcon: {fileID: 21300000, guid: eda3723adcec1bf4bad1edf4b13a9b53, type: 2}
+  trapPrefab: {fileID: 1212305869752245, guid: 1a35c1a54d03804459b41a38d2b7b0e5, type: 3}
