@@ -12,6 +12,7 @@ public class BonusWaveManager : MonoBehaviour
     public GameObject buffOption2;
     public GameObject buff1;
     public GameObject buff2;
+    public GameObject reset;
     public Button button1;
     public Button button2;
     public HealthPlayer healthPlayer;
@@ -38,6 +39,7 @@ public class BonusWaveManager : MonoBehaviour
 
         buff1.SetActive(false);
         buff2.SetActive(false);
+        reset.SetActive(false);
     }
 
     public void StartBonusWave()
@@ -78,6 +80,7 @@ public class BonusWaveManager : MonoBehaviour
 
         buff1.SetActive(true);
         buff2.SetActive(true);
+        reset.SetActive(true);
     }
 
     List<DataBuff> GetRandomBuffs(int count)
