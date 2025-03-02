@@ -45,7 +45,6 @@ public class BonusWaveManager : MonoBehaviour
     public void StartBonusWave()
     {
         HideAllTraps();
-        SpawnSpecialTrap();
         ShowRandomBuffOptions();
     }
 
@@ -59,15 +58,7 @@ public class BonusWaveManager : MonoBehaviour
         Debug.Log($"Đã ẩn {originalTraps.Count} trap cũ.");
     }
 
-    void SpawnSpecialTrap()
-    {
-        if (specialTrapPrefab != null)
-        {
-            spawnedSpecialTrap = Instantiate(specialTrapPrefab, specialTrapPosition, Quaternion.identity);
-            Debug.Log($"Spawned trap: {specialTrapPrefab.name}");
-        }
-        else Debug.LogWarning("Không có trap đặc biệt!");
-    }
+  
 
     void ShowRandomBuffOptions()
     {
