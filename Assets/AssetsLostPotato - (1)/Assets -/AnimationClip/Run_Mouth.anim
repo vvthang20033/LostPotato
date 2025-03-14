@@ -2,12 +2,12 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!74 &7400000
 AnimationClip:
-  serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Run_Mouth
+  serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
   m_UseHighQualityCurve: 1
@@ -22,7 +22,7 @@ AnimationClip:
     - time: 0
       value: {fileID: 21300000, guid: 3d95cb9a93a4d0c4eb7b9a9c7b919a51, type: 2}
     - time: 0.06666667
-      value: {fileID: 21300000, guid: 7f9cedb79fb97c54e8592973d7ad2cc2, type: 2}
+      value: {fileID: 21300000, guid: 3d95cb9a93a4d0c4eb7b9a9c7b919a51, type: 2}
     - time: 0.13333334
       value: {fileID: 21300000, guid: 67dfe77b9f0c44940a44ae06430ece5a, type: 2}
     - time: 0.2
@@ -34,7 +34,7 @@ AnimationClip:
     - time: 0.4
       value: {fileID: 21300000, guid: 268d2c1bdf6b73a4ab0b488ff866787c, type: 2}
     attribute: m_Sprite
-    path:
+    path: 
     classID: 212
     script: {fileID: 0}
   m_SampleRate: 15
@@ -53,7 +53,7 @@ AnimationClip:
       isPPtrCurve: 1
     pptrCurveMapping:
     - {fileID: 21300000, guid: 3d95cb9a93a4d0c4eb7b9a9c7b919a51, type: 2}
-    - {fileID: 21300000, guid: 7f9cedb79fb97c54e8592973d7ad2cc2, type: 2}
+    - {fileID: 21300000, guid: 3d95cb9a93a4d0c4eb7b9a9c7b919a51, type: 2}
     - {fileID: 21300000, guid: 67dfe77b9f0c44940a44ae06430ece5a, type: 2}
     - {fileID: 21300000, guid: db9de462fb359da42ae3fa54acea0feb, type: 2}
     - {fileID: 21300000, guid: 0f3a0c74905fc1c49b970912480780f9, type: 2}

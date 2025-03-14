@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
@@ -11,7 +10,8 @@ public class EnemyHealth : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Collider collider;
     public static bool hasKilledEnemy = false;
-    public int cost ; // Điểm của quái vật
+    public int cost; // Điểm của quái vật
+    public string monsterType; // Loại quái vật (ví dụ: "Goblin", "Orc", v.v.)
 
     void Start()
     {
@@ -110,8 +110,6 @@ public class EnemyHealth : MonoBehaviour
         // Kiểm tra nếu va chạm với đối tượng có tag "PlayerAttack2"
         if (other.CompareTag("PlayerAttack2"))
         {
-           
-
             // Phát animation "Die" và đánh dấu enemy đã bị tiêu diệt
             if (animator != null)
             {
@@ -121,6 +119,12 @@ public class EnemyHealth : MonoBehaviour
 
             isDead = true; // Đánh dấu enemy đã chết
             Stop(); // Gọi hàm Stop() để tạm dừng enemy
+
+            // Cập nhật số lượng quái vật đã tiêu diệt theo loại
+            if (!string.IsNullOrEmpty(monsterType))
+            {
+                MonsterKillTracker.AddMonstersKilled(monsterType, 1);
+            }
 
             // Hủy đối tượng sau một khoảng thời gian
             Destroy(gameObject, 2f);
