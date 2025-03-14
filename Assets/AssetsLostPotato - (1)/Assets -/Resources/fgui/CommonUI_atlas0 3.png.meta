@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 39664479655081844a4ae833576c4a33
+guid: 09a3537d4fd28554bb9789d3d2409111
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -1352,7 +1352,7 @@ TextureImporter:
         width: 82
         height: 83
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1360,27 +1360,6 @@ TextureImporter:
       bones: []
       spriteID: bc7fa3f50e2c0f14184e75c8205de959
       internalID: -538679304
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CommonUI_atlas0 1_41
-      rect:
-        serializedVersion: 2
-        x: 851
-        y: 10
-        width: 49
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b4ba990de3f50e1438ec441a4633b51d
-      internalID: 2139481282
       vertices: []
       indices: 
       edges: []
@@ -1432,7 +1411,6 @@ TextureImporter:
       CommonUI_atlas0 1_39: 1730370986
       CommonUI_atlas0 1_4: -1457803062
       CommonUI_atlas0 1_40: -538679304
-      CommonUI_atlas0 1_41: 2139481282
       CommonUI_atlas0 1_5: -871536278
       CommonUI_atlas0 1_6: 1126651059
       CommonUI_atlas0 1_7: -1258503290

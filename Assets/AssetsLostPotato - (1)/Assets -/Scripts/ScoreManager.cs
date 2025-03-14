@@ -5,14 +5,12 @@ using UnityEngine;
 public class ScoreManager : MonoBehaviour
 {
     public static int score;
+    public static int scoreMax = 0;
     void Start()
     {
-        score = EnemySpawn.level;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(score > scoreMax)
+        {
+            scoreMax = score;
+        }
     }
 }

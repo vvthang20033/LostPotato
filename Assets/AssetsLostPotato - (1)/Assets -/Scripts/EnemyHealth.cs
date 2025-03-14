@@ -120,11 +120,7 @@ public class EnemyHealth : MonoBehaviour
             isDead = true; // Đánh dấu enemy đã chết
             Stop(); // Gọi hàm Stop() để tạm dừng enemy
 
-            // Cập nhật số lượng quái vật đã tiêu diệt theo loại
-            if (!string.IsNullOrEmpty(monsterType))
-            {
-                MonsterKillTracker.AddMonstersKilled(monsterType, 1);
-            }
+           
 
             // Hủy đối tượng sau một khoảng thời gian
             Destroy(gameObject, 2f);
