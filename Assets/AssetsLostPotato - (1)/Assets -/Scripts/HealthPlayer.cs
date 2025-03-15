@@ -34,8 +34,6 @@ public class HealthPlayer : MonoBehaviour
                 animator.Play("Idle");
             }
         }
-
-
     }
 
     private void OnTriggerEnter(Collider other)
@@ -50,7 +48,6 @@ public class HealthPlayer : MonoBehaviour
             {
                 GameOver();
             }
-
         }
     }
 
