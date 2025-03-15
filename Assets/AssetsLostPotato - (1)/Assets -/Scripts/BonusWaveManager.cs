@@ -15,7 +15,7 @@ public class BonusWaveManager : MonoBehaviour
     public GameObject reset;
     public Button button1;
     public Button button2;
-    public HealthPlayer healthPlayer;
+    
     public PlayerMovement playerMovement;
     public HitAttack attack;
     public GameObject attackRange;
@@ -115,7 +115,7 @@ public class BonusWaveManager : MonoBehaviour
         }
         if(buffData.buffName == "buffHealth")
         {
-            healthPlayer.health += 1;
+            HealthPlayer.health += 1;
         }
         if( buffData.buffName == "buffSpeed")
         {

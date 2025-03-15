@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class HealthDisplay : MonoBehaviour
 {
-    public HealthPlayer healthPlayer; 
+    
     public Image[] hearts; 
   
 
@@ -31,12 +31,12 @@ public class HealthDisplay : MonoBehaviour
         UpdateHearts();
     }
 
-    void UpdateHearts()
+    public void UpdateHearts()
     {
         // Duyệt qua từng trái tim và bật/tắt dựa trên health
         for (int i = 0; i < hearts.Length; i++)
         {
-            if (i < healthPlayer.health)
+            if (i < HealthPlayer.health )
             {
                 hearts[i].enabled = true; // Bật trái tim nếu còn máu
             }

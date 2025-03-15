@@ -1330,7 +1330,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 846b4e6913e328b4e97a9429efafa7a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPlayer: {fileID: 1881749946}
   hearts:
   - {fileID: 1035891391}
   - {fileID: 266210308}
@@ -1539,6 +1538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonRestart: {fileID: 437576288}
+  healthDisplay: {fileID: 0}
 --- !u!1 &437842348
 GameObject:
   m_ObjectHideFlags: 0
@@ -3757,7 +3757,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textScore: {fileID: 1659895473}
-  textScoreMax: {fileID: 0}
+  textScoreMax: {fileID: 893494829}
 --- !u!114 &1109621587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4952,7 +4952,6 @@ MonoBehaviour:
   reset: {fileID: 1713150996}
   button1: {fileID: 1647339699}
   button2: {fileID: 1538250991}
-  healthPlayer: {fileID: 1881749946}
   playerMovement: {fileID: 1881749947}
   attack: {fileID: 8537446826874389412, guid: 2fc12e2ea7e59044682439ef6543df63, type: 3}
   attackRange: {fileID: 1229887375725669, guid: 2fc12e2ea7e59044682439ef6543df63, type: 3}
@@ -6274,17 +6273,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1858765962}
   m_CullTransparentMesh: 1
---- !u!114 &1881749946 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1047812423976883264, guid: c6f5ac964ed190244988dcd3f6f1d152, type: 3}
-  m_PrefabInstance: {fileID: 533033217}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01112f57ac0885b448525c7666fe9a44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1881749947 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8209508444667413910, guid: c6f5ac964ed190244988dcd3f6f1d152, type: 3}
@@ -6978,6 +6966,7 @@ GameObject:
   - component: {fileID: 2017343153}
   - component: {fileID: 2017343152}
   - component: {fileID: 2017343151}
+  - component: {fileID: 2017343154}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -7088,6 +7077,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2017343149}
   m_CullTransparentMesh: 1
+--- !u!114 &2017343154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017343149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42cb73c3cb680ac449bbeac1c80d20c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonRestart: {fileID: 2017343151}
+  healthDisplay: {fileID: 297940139}
 --- !u!1 &2046690211
 GameObject:
   m_ObjectHideFlags: 0

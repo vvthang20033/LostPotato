@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
 
 public class GameOver : MonoBehaviour
@@ -14,7 +12,7 @@ public class GameOver : MonoBehaviour
         ScoreManager.UpdateScoreOnGameOver();
 
         // Hiển thị điểm số hiện tại
-        textScore.text = ScoreManager.score.ToString();
+        textScore.text =  ScoreManager.score.ToString();
 
         // Hiển thị điểm số cao nhất
         textScoreMax.text =  ScoreManager.scoreMax.ToString();

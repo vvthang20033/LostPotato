@@ -66,7 +66,7 @@ public class TrapSpawn : MonoBehaviour
         // Spawn bẫy tại vị trí và hướng đã chọn
         Instantiate(trapPrefab, spawnPosition, spawnRotation);
 
-        Debug.Log($"Đã spawn bẫy {trapPrefab.name} tại vị trí {spawnPosition} với hướng {spawnRotation.eulerAngles}");
+        
     }
 
     public Vector3 GetRandomSpawnPosition()

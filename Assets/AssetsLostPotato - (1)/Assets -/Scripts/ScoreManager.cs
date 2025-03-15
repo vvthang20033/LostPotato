@@ -1,41 +1,37 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
     public static int score; // Điểm số hiện tại
-    public static int scoreMax = 0; // Điểm số cao nhất
+    public static int scoreMax; // Điểm số cao nhất
+    public static int totalScore; // Tổng điểm tích lũy
 
     void Start()
     {
-        // Tải điểm số cao nhất từ PlayerPrefs khi game khởi động
-        LoadScoreMax();
+        LoadScore();
     }
 
-    // Phương thức để cập nhật điểm số khi game over
     public static void UpdateScoreOnGameOver()
     {
         score = EnemySpawn.level - 1; // Cập nhật điểm số bằng level hiện tại
+
+        // Cộng điểm của lần chơi này vào tổng điểm
+        totalScore += score;
+        PlayerPrefs.SetInt("TotalScore", totalScore);
 
         // Kiểm tra và cập nhật điểm số cao nhất
         if (score > scoreMax)
         {
             scoreMax = score;
-            SaveScoreMax(); // Lưu điểm số cao nhất
+            PlayerPrefs.SetInt("ScoreMax", scoreMax);
         }
-    }
 
-    // Lưu điểm số cao nhất vào PlayerPrefs
-    private static void SaveScoreMax()
-    {
-        PlayerPrefs.SetInt("ScoreMax", scoreMax);
+        // Lưu dữ liệu
         PlayerPrefs.Save();
     }
-
-    // Tải điểm số cao nhất từ PlayerPrefs
-    private static void LoadScoreMax()
+    public static void LoadScore()
     {
         scoreMax = PlayerPrefs.GetInt("ScoreMax", 0);
+        totalScore = PlayerPrefs.GetInt("TotalScore", 0);
     }
 }

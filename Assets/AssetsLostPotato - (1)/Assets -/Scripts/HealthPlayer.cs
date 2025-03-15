@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HealthPlayer : MonoBehaviour
 {
-    public int health = 2; // Máu của người chơi
+    public static int health = 2; // Máu của người chơi
     private float speed = 8;
     public float rotateTime; // Thời gian xoay khi bị tấn công
     private float nextTimeLive = 0;

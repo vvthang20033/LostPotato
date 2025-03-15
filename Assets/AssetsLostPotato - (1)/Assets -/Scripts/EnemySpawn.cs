@@ -29,9 +29,11 @@ public class EnemySpawn : MonoBehaviour
 
     void Start()
     {
+        level = 1;
         waveDifficultyPoints = currentWave;
         StartWave();
     }
+    
 
     void StartWave()
     {
