@@ -164,6 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cost: 1
+  monsterType: neutral
 --- !u!1 &1094837863402367
 GameObject:
   m_ObjectHideFlags: 0

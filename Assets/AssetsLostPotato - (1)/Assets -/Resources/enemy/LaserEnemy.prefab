@@ -187,6 +187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cost: 7
+  monsterType: laser
 --- !u!1 &1395314896516113
 GameObject:
   m_ObjectHideFlags: 0

@@ -332,6 +332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cost: 11
+  monsterType: torch
 --- !u!1 &1348002371088918
 GameObject:
   m_ObjectHideFlags: 0

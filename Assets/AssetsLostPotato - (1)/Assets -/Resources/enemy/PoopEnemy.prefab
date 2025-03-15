@@ -207,6 +207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cost: 5
+  monsterType: poop
 --- !u!1 &7377779920918218460
 GameObject:
   m_ObjectHideFlags: 0

@@ -522,6 +522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cost: 9
+  monsterType: tank
 --- !u!1 &1980397046310810
 GameObject:
   m_ObjectHideFlags: 0

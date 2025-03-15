@@ -1,14 +1,18 @@
 ﻿using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class ButtonLock : MonoBehaviour
+public class ButtonLock2 : MonoBehaviour
 {
-    public TextMeshProUGUI textScorePlayer; // Hiển thị điểm hiện tại
-    public TextMeshProUGUI textScoreUnlock; // Hiển thị điểm cần để mở khóa
-    public int scoreUnlock; // Điểm cần để mở khóa
+    public TextMeshProUGUI textScorePlayer; // Hiển thị số quái vật đã giết
+    public TextMeshProUGUI textScoreUnlock; // Hiển thị số quái vật cần giết để mở khóa
+    private int scoreUnlock = 50; // Số quái vật cần giết để mở khóa
     public GameObject canvasScoreUnlock; // Canvas hiển thị thông báo
-    public GameObject costumeObject; // Đối tượng trang phục sẽ được mở khóa
-
+    public GameObject costumeObject; // Đối tượng sẽ được mở khóa
+    public Image imagebg;
+    public Image imageEnemy;
+    public Sprite spriteEnemy;
+    public string monsterType; // Loại quái vật cần giết để unlock
 
     private bool isUnlocked = false; // Trạng thái mở khóa
 
@@ -40,11 +44,10 @@ public class ButtonLock : MonoBehaviour
 
     private void CheckAndUnlock()
     {
-        // Tải điểm số hiện tại
-        ScoreManager.LoadScore();
+        int killedEnemies = KilledEnemiesManager.GetKilledEnemies(monsterType); // Lấy số quái vật đã giết
 
-        // Kiểm tra nếu đủ điểm để mở khóa
-        if (ScoreManager.totalScore >= scoreUnlock)
+        // Kiểm tra nếu số quái vật đã giết >= số quái vật cần giết
+        if (killedEnemies >= scoreUnlock)
         {
             UnlockCostume(); // Mở khóa
             isUnlocked = true; // Đánh dấu đã mở khóa
@@ -55,13 +58,17 @@ public class ButtonLock : MonoBehaviour
     {
         // Hiển thị thông báo điều kiện mở khóa
         canvasScoreUnlock.SetActive(true);
-        textScorePlayer.text = ScoreManager.totalScore.ToString();
-        textScoreUnlock.text = scoreUnlock.ToString();
+        imagebg.enabled = false;
+        imageEnemy.sprite = spriteEnemy;
+        imageEnemy.gameObject.transform.localScale = new Vector3(1, 1, 1);
+
+        int killedEnemies = KilledEnemiesManager.GetKilledEnemies(monsterType); // Lấy số quái vật đã giết
+        textScorePlayer.text = killedEnemies.ToString(); // Hiển thị số quái vật đã giết
+        textScoreUnlock.text = scoreUnlock.ToString(); // Hiển thị số quái vật cần giết
     }
 
     private void UnlockCostume()
     {
-        // Ẩn lock và hiển thị trang phục
         if (gameObject != null)
         {
             gameObject.SetActive(false); // Ẩn lock
@@ -69,7 +76,7 @@ public class ButtonLock : MonoBehaviour
 
         if (costumeObject != null)
         {
-            costumeObject.SetActive(true); // Hiển thị trang phục
+            costumeObject.SetActive(true); // Hiển thị đối tượng được mở khóa
         }
 
         // Ẩn canvas thông báo (nếu đang hiển thị)

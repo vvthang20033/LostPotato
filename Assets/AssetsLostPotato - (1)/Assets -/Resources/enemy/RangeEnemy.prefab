@@ -310,6 +310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cost: 3
+  monsterType: range
 --- !u!1 &1672974361967639
 GameObject:
   m_ObjectHideFlags: 0
