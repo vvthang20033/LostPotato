@@ -6,6 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/AssetsLostPotato - (1)/Assets -/Scenes/GamePlay.unity
+    path: Assets/AssetsLostPotato - (1)/Assets -/Scenes/Menu.unity
+    guid: 5b1485b8ad79558418fbd6d1f6c3b78c
+  - enabled: 1
+    path: Assets/AssetsLostPotato - (1)/Assets -/Scenes/Progress.unity
+    guid: 54eaf8abc9e28dc4397f0397a5bf3528
+  - enabled: 1
+    path: Assets/AssetsLostPotato - (1)/Assets -/Scenes/Start.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 036807f68c06a3f44900fbc44032a9b7, type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: 32967abef3b731747bd4de222aa272c5, type: 2}

@@ -26,6 +26,6 @@ public class LevelDisplay : MonoBehaviour
     void UpdateLevelDisplay()
     {
         // Cập nhật text với cấp độ hiện tại
-        text.text = "Cấp độ" + EnemySpawn.level;
+        text.text = "Level" + EnemySpawn.level;
     }
 }

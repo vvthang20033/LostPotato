@@ -103,18 +103,128 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: HallUI_atlas0_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 973
+        width: 2048
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3fa13eb622c2fb4f8eba040a29ebb7f
+      internalID: 1378970924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HallUI_atlas0_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 692
+        width: 1680
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cba5767b9c599b14695cf630b8a66cae
+      internalID: -166917472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HallUI_atlas0_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 579
+        width: 1680
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2432eb0ebb69b94419e5391ff42c8d75
+      internalID: 280740611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HallUI_atlas0_3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 58
+        width: 484
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb39d5182518a64ea409db12b361534
+      internalID: 274992822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HallUI_atlas0_4
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 130
+        width: 123
+        height: 802
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ced8ae29bc547874ba459af2ea3ca492
+      internalID: 759566542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 66f618e86ef209a419df0c6789dee148
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HallUI_atlas0_0: 1378970924
+      HallUI_atlas0_1: -166917472
+      HallUI_atlas0_2: 280740611
+      HallUI_atlas0_3: 274992822
+      HallUI_atlas0_4: 759566542
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
