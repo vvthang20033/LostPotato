@@ -290,11 +290,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 58470356}
   m_CullTransparentMesh: 1
---- !u!1 &63438310 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3577080970564194488, guid: c6f5ac964ed190244988dcd3f6f1d152, type: 3}
-  m_PrefabInstance: {fileID: 1311539261}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &138064717
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,6 +721,8 @@ GameObject:
   - component: {fileID: 199840167}
   - component: {fileID: 199840169}
   - component: {fileID: 199840168}
+  - component: {fileID: 199840170}
+  - component: {fileID: 199840171}
   m_Layer: 0
   m_Name: Basic
   m_TagString: Untagged
@@ -821,6 +818,33 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &199840170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199840166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50fb6ec4531830248b4318052829253a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hat: {fileID: 468365552}
+  animationName: Idle_Basic
+--- !u!65 &199840171
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199840166}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.34, y: 0.100000024, z: 0.20000005}
+  m_Center: {x: -0.00000011920929, y: 0.000000059604645, z: -1.4210855e-14}
 --- !u!1 &296423520
 GameObject:
   m_ObjectHideFlags: 0
@@ -865,6 +889,8 @@ GameObject:
   - component: {fileID: 319455513}
   - component: {fileID: 319455515}
   - component: {fileID: 319455514}
+  - component: {fileID: 319455516}
+  - component: {fileID: 319455517}
   m_Layer: 0
   m_Name: Fetus
   m_TagString: Untagged
@@ -960,6 +986,33 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &319455516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319455512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50fb6ec4531830248b4318052829253a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hat: {fileID: 468365552}
+  animationName: Idle_Fetus
+--- !u!65 &319455517
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319455512}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.28, y: 0.17000005, z: 0.20000005}
+  m_Center: {x: 0, y: 0.00000008940697, z: -7.1054274e-15}
 --- !u!1 &325836869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1321,6 +1374,8 @@ GameObject:
   - component: {fileID: 436047653}
   - component: {fileID: 436047655}
   - component: {fileID: 436047654}
+  - component: {fileID: 436047656}
+  - component: {fileID: 436047657}
   m_Layer: 0
   m_Name: Poop
   m_TagString: Untagged
@@ -1416,6 +1471,38 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &436047656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436047652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50fb6ec4531830248b4318052829253a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hat: {fileID: 468365552}
+  animationName: Idle_Poop
+--- !u!65 &436047657
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436047652}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.26, y: 0.12000003, z: 0.20000005}
+  m_Center: {x: -0.00000011920929, y: 0.000000074505806, z: -3.5527137e-15}
+--- !u!1 &468365552 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3577719475521199492, guid: c6f5ac964ed190244988dcd3f6f1d152, type: 3}
+  m_PrefabInstance: {fileID: 1311539261}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &480177130
 GameObject:
   m_ObjectHideFlags: 0
@@ -2014,6 +2101,8 @@ GameObject:
   - component: {fileID: 641750130}
   - component: {fileID: 641750132}
   - component: {fileID: 641750131}
+  - component: {fileID: 641750133}
+  - component: {fileID: 641750134}
   m_Layer: 0
   m_Name: Neutral
   m_TagString: Untagged
@@ -2109,6 +2198,33 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &641750133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641750129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50fb6ec4531830248b4318052829253a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hat: {fileID: 468365552}
+  animationName: Idle_Neutral
+--- !u!65 &641750134
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641750129}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.13000003, z: 0.20000005}
+  m_Center: {x: -0.000000059604645, y: 0, z: 0}
 --- !u!1 &649066500
 GameObject:
   m_ObjectHideFlags: 0
@@ -2257,6 +2373,8 @@ GameObject:
   - component: {fileID: 667557675}
   - component: {fileID: 667557677}
   - component: {fileID: 667557676}
+  - component: {fileID: 667557678}
+  - component: {fileID: 667557679}
   m_Layer: 0
   m_Name: Helmet
   m_TagString: Untagged
@@ -2352,6 +2470,33 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &667557678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667557674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50fb6ec4531830248b4318052829253a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hat: {fileID: 468365552}
+  animationName: Idle_Helmet
+--- !u!65 &667557679
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667557674}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.16000004, z: 0.20000005}
+  m_Center: {x: 0, y: 0.00000011920929, z: -1.4210855e-14}
 --- !u!1 &742307759
 GameObject:
   m_ObjectHideFlags: 0
@@ -2537,6 +2682,8 @@ GameObject:
   - component: {fileID: 797907211}
   - component: {fileID: 797907213}
   - component: {fileID: 797907212}
+  - component: {fileID: 797907214}
+  - component: {fileID: 797907215}
   m_Layer: 0
   m_Name: Range
   m_TagString: Untagged
@@ -2632,6 +2779,33 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &797907214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797907210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50fb6ec4531830248b4318052829253a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hat: {fileID: 468365552}
+  animationName: Idle_Range
+--- !u!65 &797907215
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797907210}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.29, y: 0.12000003, z: 0.20000005}
+  m_Center: {x: -0.000000059604645, y: 0.000000029802322, z: 0}
 --- !u!1 &812356124
 GameObject:
   m_ObjectHideFlags: 0
@@ -2917,8 +3091,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50fb6ec4531830248b4318052829253a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newHatSprite: {fileID: 21300000, guid: d2aaf7fce6e7d6242ba226888e177271, type: 2}
-  character: {fileID: 63438310}
+  Hat: {fileID: 468365552}
   animationName: Idle_Eyebrow
 --- !u!1 &1022593926
 GameObject:
@@ -3693,6 +3866,8 @@ GameObject:
   - component: {fileID: 1159547089}
   - component: {fileID: 1159547091}
   - component: {fileID: 1159547090}
+  - component: {fileID: 1159547092}
+  - component: {fileID: 1159547093}
   m_Layer: 0
   m_Name: Mustache
   m_TagString: Untagged
@@ -3788,6 +3963,33 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1159547092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159547088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50fb6ec4531830248b4318052829253a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hat: {fileID: 468365552}
+  animationName: Idle_Mustache
+--- !u!65 &1159547093
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159547088}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.31, y: 0.12000003, z: 0.20000005}
+  m_Center: {x: 0, y: 0.000000074505806, z: -3.5527137e-15}
 --- !u!1 &1162130457
 GameObject:
   m_ObjectHideFlags: 0
@@ -4510,6 +4712,8 @@ GameObject:
   - component: {fileID: 1295758671}
   - component: {fileID: 1295758673}
   - component: {fileID: 1295758672}
+  - component: {fileID: 1295758674}
+  - component: {fileID: 1295758675}
   m_Layer: 0
   m_Name: Tank
   m_TagString: Untagged
@@ -4605,6 +4809,33 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1295758674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295758670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50fb6ec4531830248b4318052829253a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hat: {fileID: 468365552}
+  animationName: Idle_Tank
+--- !u!65 &1295758675
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295758670}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.27, y: 0.12000003, z: 0.20000005}
+  m_Center: {x: -0.000000059604645, y: 0.00000011920929, z: -1.4210855e-14}
 --- !u!1 &1295995566
 GameObject:
   m_ObjectHideFlags: 0
@@ -4616,6 +4847,8 @@ GameObject:
   - component: {fileID: 1295995569}
   - component: {fileID: 1295995568}
   - component: {fileID: 1295995567}
+  - component: {fileID: 1295995570}
+  - component: {fileID: 1295995571}
   m_Layer: 0
   m_Name: EyePatch
   m_TagString: Untagged
@@ -4711,6 +4944,33 @@ Transform:
   m_Father: {fileID: 1710457368}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1295995570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295995566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50fb6ec4531830248b4318052829253a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hat: {fileID: 468365552}
+  animationName: Idle_Eyepatch
+--- !u!65 &1295995571
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295995566}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.19, y: 0.22000006, z: 0.20000005}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1311539261
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4765,6 +5025,10 @@ PrefabInstance:
     - target: {fileID: 3581055829385900896, guid: c6f5ac964ed190244988dcd3f6f1d152, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3581467933453065520, guid: c6f5ac964ed190244988dcd3f6f1d152, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6f5ac964ed190244988dcd3f6f1d152, type: 3}
@@ -5098,6 +5362,8 @@ GameObject:
   - component: {fileID: 1553897497}
   - component: {fileID: 1553897499}
   - component: {fileID: 1553897498}
+  - component: {fileID: 1553897500}
+  - component: {fileID: 1553897501}
   m_Layer: 0
   m_Name: Mushroom
   m_TagString: Untagged
@@ -5193,6 +5459,33 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1553897500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553897496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50fb6ec4531830248b4318052829253a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hat: {fileID: 468365552}
+  animationName: Idle_Mushroom
+--- !u!65 &1553897501
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553897496}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.29, y: 0.14000003, z: 0.20000005}
+  m_Center: {x: -0.00000011920929, y: 0.000000059604645, z: -5.3290705e-15}
 --- !u!1 &1570855114
 GameObject:
   m_ObjectHideFlags: 0
@@ -5578,6 +5871,8 @@ GameObject:
   - component: {fileID: 1692346635}
   - component: {fileID: 1692346637}
   - component: {fileID: 1692346636}
+  - component: {fileID: 1692346638}
+  - component: {fileID: 1692346639}
   m_Layer: 0
   m_Name: Mouth
   m_TagString: Untagged
@@ -5673,6 +5968,33 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1692346638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692346634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50fb6ec4531830248b4318052829253a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hat: {fileID: 468365552}
+  animationName: Idle_Mouth
+--- !u!65 &1692346639
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692346634}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.31, y: 0.19000004, z: 0.20000005}
+  m_Center: {x: 0, y: 0.00000011920929, z: 0}
 --- !u!1 &1707592941
 GameObject:
   m_ObjectHideFlags: 0
@@ -5685,6 +6007,7 @@ GameObject:
   - component: {fileID: 1707592944}
   - component: {fileID: 1707592943}
   - component: {fileID: 1707592945}
+  - component: {fileID: 1707592946}
   m_Layer: 0
   m_Name: Laser
   m_TagString: Untagged
@@ -5789,41 +6112,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1707592941}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 50fb6ec4531830248b4318052829253a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
+  Hat: {fileID: 468365552}
+  animationName: Idle_Laser
+--- !u!65 &1707592946
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707592941}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.14000003, z: 0.20000005}
+  m_Center: {x: -0.000000059604645, y: 0, z: 0}
 --- !u!1 &1710457367
 GameObject:
   m_ObjectHideFlags: 0
@@ -6176,6 +6482,8 @@ GameObject:
   - component: {fileID: 2000794644}
   - component: {fileID: 2000794646}
   - component: {fileID: 2000794645}
+  - component: {fileID: 2000794647}
+  - component: {fileID: 2000794648}
   m_Layer: 0
   m_Name: Torch
   m_TagString: Untagged
@@ -6271,6 +6579,33 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2000794647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000794643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50fb6ec4531830248b4318052829253a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hat: {fileID: 468365552}
+  animationName: Idle_Torch
+--- !u!65 &2000794648
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000794643}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.27, y: 0.18000005, z: 0.20000005}
+  m_Center: {x: -0.000000059604645, y: 0, z: 0}
 --- !u!1 &2008509564
 GameObject:
   m_ObjectHideFlags: 0
